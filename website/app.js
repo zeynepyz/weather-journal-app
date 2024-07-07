@@ -72,7 +72,7 @@ const updateUI = async () => {
         console.log(allData)
         // Update the UI with the fetched data
         document.getElementById('date').innerHTML = `Date: ${allData.date}`;
-        document.getElementById('temp').innerHTML = Math.round(allData.temp)+ 'degrees';
+        document.getElementById('temp').innerHTML = (Math.round(allData.temperature)) + ' degrees';
         document.getElementById('content').innerHTML = `Feeling: ${allData.userResponse}`;
     } catch (error) {
         console.error("Error:", error);
